@@ -33,7 +33,16 @@ const BaseLayout = () => (
   </div>
 )
 
-const HomePage = () => <div>This is a Home Page</div>
+class HomePage extends React.Component {
+  componentWillMount(){
+    console.log("component will mount hook on homepage");
+  }
+  render(){
+    return <div>This is a Home Page</div>
+  }
+}
+
+
 const LoginPage = () => <div>This is a Login Page</div>
 const RegisterPage = () => <div>This is a Register Page</div>
 const ProfilePage = () => <div>This is the Profile Page</div>
